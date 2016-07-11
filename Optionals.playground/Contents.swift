@@ -42,6 +42,7 @@ func produceFullName(withFirstName firstName: String, middleName: String?, lastN
     if let middleName = middleName {
         name = "\(name) \(middleName)"
     }
+    //so if there is a middle name include it otherwise (this case) don't include it. This makes sense.
     name = "\(name) \(lastName)"
     return name
 }
